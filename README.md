@@ -1,2 +1,2 @@
 # Space-Invaders
-Vanilla Space Invader in basic JavaScript HTML and CSS
+Vanilla Space Invaders game in basic JavaScript HTML and CSS
