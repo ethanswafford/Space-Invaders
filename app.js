@@ -1,14 +1,9 @@
-const grid = document.querySelectorAll('.grid')
+const grid = document.querySelector('.grid')
+
 
 for (let i = 0; i < 225; i++) {
     const square = document.createElement('div')
+    grid.appendChild(square)
 }
 
-
-
-
-
-
-
-
-console.log("CONNECTION SUCCESSFUL");
+const squares = Array.from(document.querySelectorAll('.grid div'))
