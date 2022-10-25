@@ -75,6 +75,10 @@ function moveInvaders() {
 
     draw();
 
+    if (squares[currentShooterIndex].classList.contains('invader', 'shooter')) {
+        console.log('Game Over!');
+    }
+
 }
 
 invadersId = setInterval(moveInvaders, 500);
