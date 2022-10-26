@@ -110,7 +110,8 @@ function shoot(e) {
             clearInterval(laserId);
 
             const alienRemoval = alienInvaders.indexOf(currentLaserIndex)
-            aliensRemoved.push(alienRemoval);
+            aliensRemoved.push(alienRemoval)
+            console.log(aliensRemoved)
 
         }
 
