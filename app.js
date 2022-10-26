@@ -87,10 +87,17 @@ function moveInvaders() {
 
             resultsDisplay.innerHTML = 'GAME OVER';
             clearInterval(invadersId)
+
         }
     }
+
+    if (aliensRemoved.length === alienInvaders.length) {
+        resultsDisplay.innerHTML = 'YOU WIN'
+        clearInterval(invadersId);
+    }
+
 }
-invadersId = setInterval(moveInvaders, 200);
+invadersId = setInterval(moveInvaders, 600);
 
 function shoot(e) {
     let laserId
@@ -111,8 +118,9 @@ function shoot(e) {
 
             const alienRemoval = alienInvaders.indexOf(currentLaserIndex)
             aliensRemoved.push(alienRemoval)
-            console.log(aliensRemoved)
-
+            results++
+            resultsDisplay.innerHTML = results;
+            console.log(aliensRemoved);
         }
 
     }
