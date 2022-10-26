@@ -103,7 +103,10 @@ function shoot(e) {
         if (squares[currentLaserIndex].classList.contains('invader')) {
             squares[currentLaserIndex].classList.remove('laser')
             squares[currentLaserIndex].classList.remove('invader')
-            squares[currentLaserIndex].classList.add('boom');
+            squares[currentLaserIndex].classList.add('boom')
+
+            setTimeout(() => squares[currentLaserIndex].classList.remove('boom'), 300)
+            clearInterval(laserId);
         }
 
     }
